@@ -1,13 +1,83 @@
-import './App.css'
+import s from './App.module.css'
 
 function App() {
 
+    return (
+        <>
+            <nav>
+                <span className={s.navItems} onclick="navTo('s1')">
+                    <img src="../assets/icons/casa2.png" alt="Início" width="60px"/>
+                        <a className={s.navWords} >Início</a>
+                </span>
+                <span className={s.navItems} onclick="navTo('s2')">
+                    <img src="../assets/icons/679720.png" alt="Carros" width="20px"/>
+                        <a className={s.navWords} >Carros</a>
+                </span>
+                <span className={s.navItems} onclick="navTo('s3')">
+                    <img src="../assets/icons/botao-de-jogo-redondo.png" alt="vid" width="20px"/>
+                        <a className={s.navWords} >Vídeos</a>
+                </span>
+                <span className={s.navItems} onclick="navTo('s4')">
+                    <img src="../assets/icons/contact-icon.webp" alt="cont" width="20px"/>
+                        <a className={s.navWords} >Contatos</a>
+                </span>
+            </nav>
+            <main>
+                <section id="s1">
+                    <h1>BMW</h1>
+                    <h2>Sheer Driving Pleasure</h2>
+                </section>
+                <section id="s2">
+                    <div className={s.card}>
+                        <img width="300px" height="auto" src="../assets/images/bmwM3.webp" alt=""/>
+                            <div>
+                                <h4>BMW M3</h4>
+                                <p>Potência que arrepia, presença que domina. A BMW M3 não passa despercebida — nasceu para acelerar corações e deixar qualquer reta pequena.</p>
+                            </div>
+                    </div>
+                    <div className={s.card}>
+                        <img width="300px" height="auto" src="../assets/images/bmwserie4.webp" alt=""/>
+                            <div>
+                                <h4>BMW Série 4</h4>
+                                <p>Elegância agressiva em cada detalhe. A BMW Série 4 combina esportividade e sofisticação como poucas conseguem.</p>
+                            </div>
+                    </div>
+                    <div className={s.card}>
+                        <img width="300px" height="auto" src="../assets/images/bmwX6.webp" alt=""/>
+                            <div>
+                                <h4>BMW X6</h4>
+                                <p>Imponente por natureza, luxuosa por essência. A BMW X6 entrega conforto, força e presença em qualquer cenário.</p>
+                            </div>
+                    </div>
 
-  return (
-    <>
-      <h1>fddsafdsjfndsiaf</h1>
-    </>
-  )
+                </section>
+                <section id="s3">
+                    <iframe width="560" height="315" className={s.vid} src="https://www.youtube.com/embed/l61OVd4v9d4?si=lBXGXC6tMPDpyKjS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+                <section id="s4">
+                    <h3>CONTATOS</h3>
+                    <div className={s.formulario}>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome"/>
+                            <label for="assunto">Mensagem:</label>
+                            <textarea id="assunto" placeholder="Digite uma mensagem"></textarea>
+                            <button onclick="enviar()">ENVIAR</button>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>                
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>               
+                </a>
+            </footer>
+        </>
+    )
 }
 
 export default App
