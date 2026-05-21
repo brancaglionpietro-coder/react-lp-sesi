@@ -148,7 +148,7 @@
     box-shadow: 0px 3px 10px #051723;
 }
 
-.butão{
+.butao{
     width: 100%;
     padding: 10px;
     background-color: var(--text);
@@ -161,7 +161,7 @@
     transition: all 200ms ease-in-out;
 }
 
-.formulario button:hover{
+.butao button:hover{
     cursor: pointer;
     box-shadow: 0px 3px 10px #051723;
     background-color: transparent;

@@ -80,7 +80,7 @@ function App() {
                         <input type="text" id="nome" placeholder="Digite seu nome" />
                         <label for="assunto">Mensagem:</label>
                         <textarea id="assunto" placeholder="Digite uma mensagem"></textarea>
-                        <button className={s.butão} onclick="enviar()">ENVIAR</button>
+                        <button className={s.butao} onclick="enviar()">ENVIAR</button>
                     </div>
                 </section>
             </main>
