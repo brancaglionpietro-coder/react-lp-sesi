@@ -80,19 +80,19 @@ function App() {
                         <input type="text" id="nome" placeholder="Digite seu nome" />
                         <label for="assunto">Mensagem:</label>
                         <textarea id="assunto" placeholder="Digite uma mensagem"></textarea>
-                        <button onclick="enviar()">ENVIAR</button>
+                        <button className={s.butão} onclick="enviar()">ENVIAR</button>
                     </div>
                 </section>
             </main>
             <footer>
                 <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-brands fa-facebook"></i>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank">
-                    <i class="fa-brands fa-square-linkedin"></i>
+                    <i className="fa-brands fa-square-linkedin"></i>
                 </a>
             </footer>
         </>

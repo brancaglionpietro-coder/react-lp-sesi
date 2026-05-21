@@ -59,11 +59,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     min-height: 70vh;
+    flex-wrap: wrap;
     gap: 50px;
     color: var(--text);
-    margin-top: -10vh; 
+    margin-top: 10vh; 
     padding-top: 10vh;
     position: relative;
     z-index: 2;
@@ -77,7 +77,6 @@
     justify-content: center;
     flex-direction: column;
     opacity: 1;
-    transform: translateY(200px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -90,6 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 70px;
 }
 
 .s4{
@@ -99,7 +99,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding-top: -8vh;
+    padding-top: 5vh;
 }
 
 .formulario{
@@ -148,7 +148,7 @@
     box-shadow: 0px 3px 10px #051723;
 }
 
-.formulario button{
+.butão{
     width: 100%;
     padding: 10px;
     background-color: var(--text);
