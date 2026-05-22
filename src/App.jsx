@@ -1,9 +1,5 @@
 import s from './App.module.css'
 
-import a from '/casa2.png'
-import b from '/679720.png'
-import c from '/botao-de-jogo-redondo.png'
-import d from '/contact-icon.webp'
 import a1 from '/bmwM3.webp'
 import b2 from '/bmwserie4.webp'
 import c3 from '/bmwX6.webp'
@@ -23,7 +19,23 @@ function App() {
 
     return (
         <>
-            <nav>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#">BMW</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <a className="nav-link" href="#s1"  onclick={() => navTo("s1")}>Início</a>
+                            <a className="nav-link" href="#s2" onclick={() => navTo("s2")}>Carros</a>
+                            <a className="nav-link" href="#s3" onclick={() => navTo("s3")}>Vídeo</a>
+                            <a className="nav-link" href="#s4" onclick={() => navTo("s4")}>Contatos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            {/* <nav>
                 <span className={s.navItems} onclick={() => navTo("s1")}>
                     <img src={a} alt="Início" width="60px" />
                     <a href='#s1' className={s.navWords} >Início</a>
@@ -40,7 +52,7 @@ function App() {
                     <img src={d} alt="cont" width="20px" />
                     <a href='#s4' className={s.navWords} >Contatos</a>
                 </span>
-            </nav>
+            </nav> */}
             <main>
                 <section className={s.s1} id="s1">
                     <h1>BMW</h1>

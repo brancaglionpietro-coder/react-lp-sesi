@@ -20,22 +20,36 @@ body{
     color: var(--text);
 }
 
-nav{
+.navbar{
+    width: 100% !important;
+    position: fixed!important;
+    top: 0 !important;
+    background-color: var(--ag) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;  
+    z-index: 999 !important;
+}
+
+/* nav{
     width: 100%;
     position: fixed;
     top: 0;
     background-color: var(--ag);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
     gap: 2vw;
     height: 100px;
     z-index: 999;
     animation: decima 1s ease-in-out;
     transition: all 1s ease-in-out;
-}
+} /*
 
-a:hover{
+
+
+
+/*a:hover{
     opacity: 1;
     text-shadow: 0px 3px 10px var(--text);
 }
